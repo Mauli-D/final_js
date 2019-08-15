@@ -17,7 +17,7 @@ function Edit(props) {
 
     Axios.post("/api/movies/update", {
       id: props.match.params.id,
-      movie: inputs
+      ...inputs
     })
       .then(resp => setRedirect(true))
       .catch(err => console.error(err));
