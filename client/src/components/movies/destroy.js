@@ -9,7 +9,7 @@ function Destroy(props) {
     });
   }, [props]);
 
-  return <Redirect to="/movies" />;
+  return <Redirect to="/" />;
 }
 
 export default Destroy;

@@ -26,7 +26,7 @@ function New() {
     });
   }
 
-  if (redirect) return <Redirect to="/movies" />;
+  if (redirect) return <Redirect to="/" />;
 
   return (
     <div className="container">
