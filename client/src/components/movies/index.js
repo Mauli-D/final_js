@@ -32,14 +32,14 @@ function Index() {
             {movies.map(movie => (
               <tr key={movie._id}>
                 <td>
-                  <Link to={`/movies/${movie._id}`}>{movie.title}</Link>
+                  <Link to={`/${movie._id}`}>{movie.title}</Link>
                 </td>
                 <td>{movie.description}</td>
                 <td>{movie.price}</td>
                 <td>{movie.rating}</td>
                 <td>
-                  <Link to={`/movies/${movie._id}/edit`}>edit</Link>|
-                  <Link to={`/movies/${movie._id}/destroy`}>delete</Link>
+                  <Link to={`/${movie._id}/edit`}>edit</Link>|
+                  <Link to={`/${movie._id}/destroy`}>delete</Link>
                 </td>
               </tr>
             ))}
